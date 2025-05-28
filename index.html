@@ -52,21 +52,25 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">UniPre3D: Unified Pre-training of 3D Point Cloud Models <br>with Cross-Modal Gaussian Splatting</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://wangzy22.github.io/" target="_blank">Ziyi Wang</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yanran Zhang</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jie Zhou</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiwen Lu†</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">Department of Automation, Tsinghua University, China<br>CVPR 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -124,11 +128,11 @@
 
 
 <!-- Teaser video-->
+<!--
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -138,6 +142,7 @@
     </div>
   </div>
 </section>
+-->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +153,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The scale diversity of point cloud data presents significant challenges in developing unified representation learning techniques for 3D vision. 
+            Currently, there are few unified 3D models, and no existing pre-training method is equally effective for both object- and scene-level point clouds. In this paper, we introduce UniPre3D, the first unified pre-training method that can be seamlessly applied to point clouds of any scale and 3D models of any architecture. Our approach predicts Gaussian primitives as the pre-training task and employs differentiable Gaussian splatting to render images, enabling precise pixel-level supervision and end-to-end optimization. To further regulate the complexity of the pre-training task and direct the model's focus toward geometric structures, we integrate 2D features from pre-trained image models to incorporate well-established texture knowledge. We validate the universal effectiveness of our proposed method through extensive experiments across a variety of object- and scene-level tasks, using diverse point cloud models as backbones.
           </p>
         </div>
       </div>
@@ -172,9 +178,9 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/teaser.gng" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          Existing object-level pre-training methods usually follow a generative masked auto-encoding (MAE) paradigm. Their scene-level counterparts mostly leverage the contrastive learning paradigm. We propose a unified pre-training method that is applicable and effective to both object- and scene-level point clouds and models.
         </h2>
       </div>
       <div class="item">
