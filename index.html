@@ -58,12 +58,12 @@
               <span class="author-block">
                 <a href="https://wangzy22.github.io/" target="_blank">Ziyi Wang</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yanran Zhang</a><sup>*</sup>,</span>
+                  <a href="https://github.com/Zhangyr2022" target="_blank">Yanran Zhang</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jie Zhou</a>
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiwen Lu<sup>†</sup></a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiwen Lu</a><sup>†</sup>
                   </span>
                   </div>
 
@@ -99,7 +99,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/wangzy22/UniPre3D" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -203,7 +203,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
+      <!-- 居中 -->
+      <!-- <img src="static/images/teaser.png" alt="MY ALT TEXT">  图片居中容器 -->
+      <div class="has-text-centered mb-5">  <!-- 添加的包裹容器 -->
+        <img 
+          src="static/images/teaser.png" 
+          alt="MY ALT TEXT"
+          style="max-width: 75%; height: auto;"  
+          class="is-inline-block" 
+        >
+      </div>
       <h2 class="subtitle has-text-centered">
         Existing object-level pre-training methods usually follow a generative masked auto-encoding (MAE) paradigm. Their scene-level counterparts mostly leverage the contrastive learning paradigm. We propose a unified pre-training method that is applicable and effective to both object- and scene-level point clouds and models.
       </h2>
@@ -213,49 +222,44 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -263,7 +267,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End video carousel -->
 
 
@@ -272,6 +276,7 @@
 
 
 <!-- Paper poster -->
+<!--
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
@@ -287,6 +292,7 @@
 
 
 <!--BibTex citation -->
+<!--
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
