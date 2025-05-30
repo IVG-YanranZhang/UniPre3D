@@ -149,9 +149,9 @@
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-centered">
+        <!-- <div class="content has-text-centered"> -->
           <p>
             <b>The scale diversity of point cloud data</b> presents significant challenges in developing unified representation learning techniques for 3D vision. 
             Currently, there are few unified 3D models, and no existing pre-training method is equally effective for both object- and scene-level point clouds. In this paper, we introduce <b>UniPre3D, the first unified pre-training method</b> that can be seamlessly applied to point clouds of any scale and 3D models of any architecture. Our approach predicts Gaussian primitives as the pre-training task and employs differentiable Gaussian splatting to render images, enabling precise pixel-level supervision and end-to-end optimization. To further regulate the complexity of the pre-training task and direct the model's focus toward geometric structures, we integrate 2D features from pre-trained image models to incorporate well-established texture knowledge. We validate the universal effectiveness of our proposed method through <b>extensive experiments across a variety of object- and scene-level tasks</b>, using diverse point cloud models as backbones.
@@ -209,7 +209,7 @@
         <img 
           src="static/images/teaser.png" 
           alt="MY ALT TEXT"
-          style="max-width: 70%; height: auto;"  
+          style="max-width: 60%; height: auto;"  
           class="is-inline-block" 
         >
       </div>
@@ -223,7 +223,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <div class="content has-text-centered">
           <p class="is-size-5">
             Our proposed pre-training task involves predicting Gaussian parameters from the input point cloud. The 3D backbone network is expected to extract representative features, and 3D Gaussian splatting is implemented to render images for direct supervision. To incorporate additional texture information and adjust task complexity, we introduce a pre-trained image model and propose a scale-adaptive fusion block to accommodate varying data scales.
@@ -243,7 +243,7 @@
         <img 
           src="static/images/pipeline.png" 
           alt="MY ALT TEXT"
-          style="max-width: 75%; height: auto;"  
+          style="max-width: 65%; height: auto;"  
           class="is-inline-block" 
         >
       </div>
@@ -259,7 +259,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-full">
         <div class="content has-text-centered">
           <p class="is-size-5">
             Below is visualization of UniPre3D pre-training outputs. The first row presents the input point clouds, followed by the reference view images in the second row. The third row displays the rendered images, which are supervised by the ground truth images shown in the fourth row. In the rightmost column, we illustrate a schematic diagram of the view selection principle for both object- and scene-level samples.
@@ -279,7 +279,7 @@
         <img 
           src="static/images/visualization.png" 
           alt="MY ALT TEXT"
-          style="max-width: 70%; height: auto;"  
+          style="max-width: 85%; height: auto;"  
           class="is-inline-block" 
         >
       </div>
