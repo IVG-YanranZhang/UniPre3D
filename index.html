@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>UniPre3D</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -60,10 +60,10 @@
                 <span class="author-block">
                   <a href="https://github.com/Zhangyr2022" target="_blank">Yanran Zhang</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jie Zhou</a>
+                    <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en" target="_blank">Jie Zhou</a>
                   </span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Jiwen Lu</a><sup>†</sup>
+                    <a href="https://ivg.au.tsinghua.edu.cn/Jiwen_Lu/" target="_blank">Jiwen Lu</a><sup>†</sup>
                   </span>
                   </div>
 
@@ -153,8 +153,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The scale diversity of point cloud data presents significant challenges in developing unified representation learning techniques for 3D vision. 
-            Currently, there are few unified 3D models, and no existing pre-training method is equally effective for both object- and scene-level point clouds. In this paper, we introduce UniPre3D, the first unified pre-training method that can be seamlessly applied to point clouds of any scale and 3D models of any architecture. Our approach predicts Gaussian primitives as the pre-training task and employs differentiable Gaussian splatting to render images, enabling precise pixel-level supervision and end-to-end optimization. To further regulate the complexity of the pre-training task and direct the model's focus toward geometric structures, we integrate 2D features from pre-trained image models to incorporate well-established texture knowledge. We validate the universal effectiveness of our proposed method through extensive experiments across a variety of object- and scene-level tasks, using diverse point cloud models as backbones.
+            <b>The scale diversity of point cloud data</b> presents significant challenges in developing unified representation learning techniques for 3D vision. 
+            Currently, there are few unified 3D models, and no existing pre-training method is equally effective for both object- and scene-level point clouds. In this paper, we introduce <b>UniPre3D, the first unified pre-training method</b> that can be seamlessly applied to point clouds of any scale and 3D models of any architecture. Our approach predicts Gaussian primitives as the pre-training task and employs differentiable Gaussian splatting to render images, enabling precise pixel-level supervision and end-to-end optimization. To further regulate the complexity of the pre-training task and direct the model's focus toward geometric structures, we integrate 2D features from pre-trained image models to incorporate well-established texture knowledge. We validate the universal effectiveness of our proposed method through <b>extensive experiments across a variety of object- and scene-level tasks</b>, using diverse point cloud models as backbones.
           </p>
         </div>
       </div>
@@ -209,18 +209,38 @@
         <img 
           src="static/images/teaser.png" 
           alt="MY ALT TEXT"
-          style="max-width: 65%; height: auto;"  
+          style="max-width: 70%; height: auto;"  
           class="is-inline-block" 
         >
       </div>
       <h2 class="subtitle has-text-centered">
-        Existing object-level pre-training methods usually follow a generative masked auto-encoding (MAE) paradigm. Their scene-level counterparts mostly leverage the contrastive learning paradigm. We propose a unified pre-training method that is applicable and effective to both object- and scene-level point clouds and models.
+        Existing object-level pre-training methods usually follow a generative masked auto-encoding (MAE) paradigm. Their scene-level counterparts mostly leverage the contrastive learning paradigm. We propose a unified pre-training method that is applicable and effective to <b>both object- and scene-level point clouds and models.</b>
       </h2>
     </div>
   </div>
 </section>
 
+Our proposed pre-training task involves predicting Gaussian parameters from the input point cloud. The 3D backbone network is expected to extract representative features, and 3D Gaussian splatting is implemented to render images for direct supervision. To incorporate additional texture information and adjust task complexity, we introduce a pre-trained image model and propose a scale-adaptive fusion block to accommodate varying data scales.
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- 居中 -->
+      <!-- <img src="static/images/teaser.png" alt="MY ALT TEXT">  图片居中容器 -->
+      <div class="has-text-centered mb-5">  <!-- 添加的包裹容器 -->
+        <img 
+          src="static/images/teaser.png" 
+          alt="MY ALT TEXT"
+          style="max-width: 70%; height: auto;"  
+          class="is-inline-block" 
+        >
+      </div>
+      <h2 class="subtitle has-text-centered">
+        <b>UniPre3D pre-training pipeline.</b>
+      </h2>
+    </div>
+  </div>
+</section>
 <!-- Youtube video -->
 <!-- <section class="hero is-small is-light">
   <div class="hero-body">
